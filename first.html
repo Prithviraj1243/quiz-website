@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Contest page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+
+  <div class="box">
+
+    <!-- START -->
+    <div id="startScreen">
+      <h1>Quiz Contest 🏁</h1>
+      <p>One question at a time • 90 seconds each</p>
+      <button class="btn main" id="startBtn">Start</button>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quizScreen" class="hide">
+
+      <div class="top">
+        <div class="ring" id="ring">
+          <div class="ringText" id="timeText">00:90</div>
+        </div>
+
+        <div class="info">
+          <div class="pill">Q: <span id="qNo">1</span>/<span id="qTotal">6</span></div>
+          <div class="pill">Score: <span id="score">0</span>/<span id="scoreTotal">6</span></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="bar" id="bar"></div>
+      </div>
+
+      <h2 id="question">Question here</h2>
+
+      <div id="options"></div>
+
+      <div class="bottom">
+        <button class="btn main" id="nextBtn">Next</button>
+      </div>
+
+    </div>
+
+    <!-- RESULT -->
+    <div id="resultScreen" class="hide">
+      <h2 id="resultTitle">Result</h2>
+      <p id="resultText"></p>
+      <button class="btn main" id="againBtn">Play Again</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
